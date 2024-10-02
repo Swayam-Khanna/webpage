@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <style><meta charset="utf-8">
+        /* body or div*/
+body {
+    background-color: rgba(125, 125, 125, 0.1);
+}
+
+div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* container main */
+.container {
+    width: 80%;
+    background-color: rgba(175, 175, 175, 0.1);
+    color: rgb(125, 125, 125);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 250px 2fr;
+    gap: 20px;
+    background-image:url("https://tse1.mm.bing.net/th?id=OIP.YJiSxgANOkoaOK_4VXUTeQHaEK&pid=Api&P=0&h=180");
+}
+
+/* favorite movie*/
+.movie img {
+    height: 100px;
+    width: 60px;
+    float: left;
+    margin: 20px;
+
+}
+
+/* favorites */
+.favorites {
+    display: grid;
+    grid-row: span 2;
+    grid-template-columns: repeat(1, 1fr);
+
+    
+}
+.favorites p {
+    margin: 0;
+    font-size: 1em;
+    color: #666;
+}
+
+
+/* social media */
+.social {
+    grid-row: 2;
+    text-align: center;
+}
+
+.social img {
+    height: 50px;
+    width: 70px;
+    margin: 10px;
+}
+
+/* User footer */
+.footer {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    text-align: justify;
+}
+
+/* User */
+.user {
+    text-align: center;
+}
+
+.user img {
+    height: 100px;
+    width: 100px;
+    border: 2px solid rgb(170, 170, 170);
+}
+
+.user h2 {
+    color: red;
+}
+
+/* button */
+.user button {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+button:hover{
+    color:green;
+}
+.favorites:hover{
+    color:Black;
+}
+    </style>
+    <div class="container">
+        <div class="user">
+            <h2>User Name</h2>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.rcmXeqCUOiCg54dfU4v9tgHaHa&pid=Api&P=0&h=180" alt="User Avatar">
+            <p>Portofolio contains my information,project,skills and contact information about me.</p>
+            <button>Know More About Me</button>
+        </div>
+
+        <div class="favorites">
+            <h2>Skills</h2>
+            <div class='movie'>
+            <img src="https://tse4.mm.bing.net/th?id=OIP.UiMPHGjU5Ea-RcKBBZ4yOQHaFr&pid=Api&P=0&h=180" alt="Favorite Movie Poster">
+            <p>Skills information contain skills of developer to develop static and dynamic websites or webpages.
+            A project is a set of tasks that must be completed within a defined timeline to accomplish a specific set of goals. These tasks are completed by a group of people known as the project team, which is led by a project manager, who oversees the planning, scheduling, tracking and successful completion of projects. Besides the project team, projects.</p></div>
+            <div class='movie'>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.Bt0BxZWGRHMAnK1cmU_-MAHaE3&pid=Api&P=0&h=180" alt="Favorite Movie Poster">
+            <p>Active listening refers to the ability to focus completely on the person who you're communicating with.
+            Communication skills are the abilities you use when giving and receiving different kinds of information.
+            Computer skills involve the ability to learn and operate various technology. Hardware skills allow you to physically operate a computer,
+        </p></div>
+        </div>
+
+        <div class="social">
+            <h3>Connect With Me</h3>
+            <img src="https://tse3.mm.bing.net/th?id=OIP.Zfn2VjTaDa7TsUoMKzIYgAHaD7&pid=Api&P=0&h=180" alt="Facebook">
+            <h3>xyz.abc@3005gmail.com<h3>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.8sBR6VzjdJcBOyjsl9HABQHaHa&pid=Api&P=0&h=180" alt="LinkedIn">
+             <h3>abc.abc@3005gmail.com<h3>
+            <img src="https://tse1.mm.bing.net/th?id=OIP.0ZzsExBLkRl3AduCcB-irgHaEK&pid=Api&P=0&h=180" alt="Twitter">
+             <h3>abc.xyz@3005gmail.com<h3>
+        </div>
+
+        <div class="footer">
+            <p>
+                <ul><li>Provide your email address, phone number, and social media links.</li>
+<li>Consider adding a contact form for visitors to reach out directly.</li></ul></p>
+        </div>
+    </div>
+</body>
+</html>
